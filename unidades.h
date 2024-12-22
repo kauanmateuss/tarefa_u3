@@ -1,16 +1,27 @@
 #ifndef UNIDADES_H
-#include UNIDADES_H
+#define UNIDADES_H
 
-// AQUI DENTRO DESSE BLOCO VOCÊ COLOCA TODOS OS TIPOS QUE VOCÊ DEFINIR E QUE IRÁ USAR NO PROJETO
+float horasparaminutos(float horas) {
+    return horas * 60;
+}
 
-// EX:
+float horasparasegundos(float horas) {
+    return horas * 60 * 60;
+}
 
-// STRUCTS;
-// PROTÓTIPOS DE FUNÇÕES;
-// VARIÁVEIS GLOBAIS
-// ...
+float minutosparahoras(float minutos) {
+    return minutos / 60;
+}
 
-// QUANDO FOREM CODAR PODE APAGAR ESSES COMENTÁRIOS
+float minutosparasegundos(float minutos) {
+    return minutos * 60;
+}
 
+float segundosparahoras(float segundos) {
+    return segundos / 3600;
+}
 
-#endif  // UNIDADES_H
+float segundosparaminutos(float segundos) {
+    return segundos / 60;
+}
+#endif // UNIDADES_H
