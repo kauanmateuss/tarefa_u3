@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "unidadeTemperatura.h"
 
-// Função para converter temperaturas
+// Implementação da função para converter temperaturas
 double converterTemperatura(double valor, char unidadeOrigem, char unidadeDestino) {
     double resultado;
 
@@ -34,26 +35,4 @@ double converterTemperatura(double valor, char unidadeOrigem, char unidadeDestin
     }
 
     return resultado;
-}
-
-int main() {
-    double valor, convertido;
-    char unidadeOrigem, unidadeDestino;
-
-    printf("Digite o valor da temperatura: ");
-    scanf("%lf", &valor);
-
-    printf("Digite a unidade de origem (C, F, K): ");
-    scanf(" %c", &unidadeOrigem);
-
-    printf("Digite a unidade de destino (C, F, K): ");
-    scanf(" %c", &unidadeDestino);
-
-    convertido = converterTemperatura(valor, unidadeOrigem, unidadeDestino);
-
-    if (convertido != -1) {
-        printf("Temperatura convertida: %.2f %c\n", convertido, unidadeDestino);
-    }
-
-    return 0;
 }
