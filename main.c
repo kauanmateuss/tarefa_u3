@@ -1,17 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "unidades.h"   // incluindo a biblioteca com as funções que vocês desenvolveram.
-
+#include "tempo.h"   // incluindo a biblioteca com as funções que vocês desenvolveram.
 
 int main() {
+    system("chcp 65001>nul");
+
     int opcao;
 
     printf("====================== BEM VINDO AO CONVERSOR DE UNIDADES ==========================\n");
 
+
     // Perguntando ao usuario qual opcao ele quer executar:
 
     do{
-        printf("1 - COMPRIMENTO\n2 - MASSA\n3 - VOLUME\n4 - TEMPERATURA\n5 - TEMPO\nQUAL CONVERSOR DESEJA EXECUTAR: ");
+        printf("0 - SAIR DO PROGRAMA\n1 - COMPRIMENTO\n2 - MASSA\n3 - VOLUME\n4 - TEMPERATURA\n5 - TEMPO\nQUAL CONVERSOR DESEJA EXECUTAR: ");
         scanf("%d", &opcao);
 
         // switch para multiplas escolhas:
