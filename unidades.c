@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "unidades.h"   // Incluindo a bibliotecas que contem os protótipos das funções.
 
-int main(){
+void unidade_de_tempo(){
     int opcao;
     float valor, resultado;
 
@@ -58,5 +58,4 @@ int main(){
             break; 
         } 
     } while (1); // Mantem o programa rodando até que o usuário escolha a opção 7.
-    return 0; // O programa termina aqui.
 }

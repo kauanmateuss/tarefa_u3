@@ -1,6 +1,8 @@
 #ifndef UNIDADES_H
 #define UNIDADES_H
 
+void unidade_de_tempo();
+
 float horasparaminutos(float horas) {
     return horas * 60;
 }
