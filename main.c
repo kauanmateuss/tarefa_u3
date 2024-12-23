@@ -38,6 +38,7 @@ int main() {
             
             case 5:
                 // chamar a função de unidades de TEMPO
+                unidade_de_tempo();
                 break;
             
             default:
