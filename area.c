@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "area.h"
 
 void metrosParaCentimetros(double metros) {
@@ -31,7 +32,7 @@ void centimetrosParaMilimetros(double centimetros) {
 }
 
 
-void main(){
+// void main(){
 
-    centimetrosParaMetros(100);
-}
+//     centimetrosParaMetros(100);
+// }
