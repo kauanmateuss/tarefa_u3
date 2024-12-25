@@ -11,7 +11,7 @@ int main() {
     int opcao;
     float valor, conversao;
     int escolha;
-    double valor, convertido;
+    double value, convertido;
     char unidadeOrigem, unidadeDestino;
 
     printf("====================== BEM VINDO AO CONVERSOR DE UNIDADES ==========================\n");
@@ -153,7 +153,7 @@ int main() {
                 // chamar a função de unidades de TEMPERATURA;
 
                 printf("Digite o valor da temperatura: ");
-                scanf("%lf", &valor);
+                scanf("%lf", &value);
 
                 printf("Digite a unidade de origem (C, F, K): ");
                 scanf(" %c", &unidadeOrigem);
@@ -161,7 +161,7 @@ int main() {
                 printf("Digite a unidade de destino (C, F, K): ");
                 scanf(" %c", &unidadeDestino);
 
-                convertido = converterTemperatura(valor, unidadeOrigem, unidadeDestino);
+                convertido = converterTemperatura(value, unidadeOrigem, unidadeDestino);
 
                 if (convertido != -1) {
                  printf("Temperatura convertida: %.2f %c\n", convertido, unidadeDestino);
@@ -209,11 +209,12 @@ int main() {
             default:
                 printf("OPCAO INVALIDA. TENTE NOVAMENTE\n");
                 continue;
+            
+            }
 
         }
 
     }while(opcao != 0);
-
 
     return 0;
 }
