@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "unidades.h"   // incluindo a biblioteca com as funções que vocês desenvolveram.
+#include "unidadeTemperatura.h"// Biblioteca unidade de temperatura Elioenai
 
 
 int main() {
@@ -34,6 +35,22 @@ int main() {
 
             case 4:
                 // chamar a função de unidades de TEMPERATURA;
+                double valor, convertido;
+                char unidadeOrigem, unidadeDestino;
+
+                printf("Digite o valor da temperatura: ");
+                scanf("%lf", &valor);
+
+                printf("Digite a unidade de origem (C, F, K): ");
+                scanf(" %c", &unidadeOrigem);
+
+                printf("Digite a unidade de destino (C, F, K): ");
+                scanf(" %c", &unidadeDestino);
+
+                convertido = converterTemperatura(valor, unidadeOrigem, unidadeDestino);
+
+                if (convertido != -1) {
+                 printf("Temperatura convertida: %.2f %c\n", convertido, unidadeDestino);
                 break;
             
             case 5:
